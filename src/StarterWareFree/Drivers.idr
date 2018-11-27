@@ -17,6 +17,15 @@ module StarterWareFree.Drivers
 %default total
 %include C "gpio_v2.h"
 
+GPIO_DIR_OUTPUT : Int
+GPIO_DIR_OUTPUT = 0x0
+
+GPIO_PIN_HIGH : Int
+GPIO_PIN_HIGH = 0x1
+
+GPIO_PIN_LOW : Int
+GPIO_PIN_LOW = 0x0
+
 GPIOModuleReset : Int -> IO ()
 GPIOModuleReset baseAdd =
     foreign FFI_C "GPIOModuleReset" (Int -> IO ()) baseAdd
