@@ -10,3 +10,6 @@ cmake_minimum_required(VERSION 3.7.2)
 
 idris_add_module(StarterWareFree.Drivers)
 idris_module_link_libraries(StarterWareFree.Drivers drivers)
+
+idris_add_module(StarterWareFree.Platform)
+idris_module_link_libraries(StarterWareFree.Platform platform)
