@@ -19,3 +19,9 @@ file(GLOB platform_files
 )
 idris_add_module(StarterWareFree.Platform ${platform_files})
 idris_module_link_libraries(StarterWareFree.Platform platform)
+
+file(GLOB utils_files
+    StarterWareFree/Utils.idr
+)
+idris_add_module(StarterWareFree.Utils ${utils_files})
+idris_module_link_libraries(StarterWareFree.Utils utils)
